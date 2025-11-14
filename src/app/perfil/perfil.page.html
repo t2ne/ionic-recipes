@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-title
+    style="
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      margin-top: 15px;
+    "
+    >Perfil</ion-title
+  >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label class="label-left">Nome:</ion-label>
+    <ion-text slot="end" class="text-right">t2ne</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label-left">Idade:</ion-label>
+    <ion-text slot="end">19</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label-left">Género:</ion-label>
+    <ion-text slot="end">Ionic</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label-left">Curso:</ion-label>
+    <ion-text slot="end">-</ion-text>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label-left">Data de Criação da App:</ion-label>
+    <ion-text slot="end">15-04-2024</ion-text>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label class="label-left">Prato Favorito:</ion-label>
+    <ion-text slot="end">Polvo á Lagareiro</ion-text>
+  </ion-item>
+</ion-content>
+
+<style>
+  ion-item {
+    --padding-start: 7%;
+    --padding-end: 7%;
+    margin-top: 1%;
+  }
+
+  .label-left {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .text-right {
+    font-size: 16px;
+    color: #ffffff;
+  }
+</style>

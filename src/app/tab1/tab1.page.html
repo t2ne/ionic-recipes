@@ -1,0 +1,142 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar style="--background: #37210a !important; margin-top: 50px">
+      <ion-title style="font-weight: bold">Curiosidades</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <p class="centered-item"><b>Ingredientes mais Utilizados:</b></p>
+    <br />
+    <ol>
+      <li class="lista">Água - 1,2L</li>
+      <li class="lista">Feijão Branco Seco - 500g</li>
+      <li class="lista">Dobrada - 1,5kg</li>
+      <li class="lista">Batata para Cozer - 600g</li>
+      <li class="lista">Chouriço de Carne - 310g</li>
+      <li class="lista">Tomates - 4 unidades</li>
+      <li class="lista">Cenouras - 3 unidades</li>
+      <li class="lista">Cebolas - 2 unidades</li>
+      <li class="lista">Dentes de Alho - 2 unidades</li>
+      <li class="lista">Presunto - 200g</li>
+    </ol>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content"></div>
+<ion-header [translucent]="true">
+  <ion-title
+    style="
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      margin-top: 15px;
+    "
+    >História</ion-title
+  >
+  <ion-toolbar style="--background: #37210a !important">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end" style="margin-right: 2px">
+      <ion-button [routerLink]="['/perfil']">
+        <ion-icon
+          name="person-circle-outline"
+          size="large"
+          [routerLink]="['/perfil']"
+        ></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="grid-container">
+    <div class="centered-item">
+      <div class="white-ball"></div>
+    </div>
+
+    <div class="centered-item">
+      <ion-icon name="caret-down-outline" class="icon"></ion-icon>
+    </div>
+
+    <ion-item button detail="false" lines="none">
+      <ion-label class="centered-label" [routerLink]="['/historia']">
+        <h1><b>Tripas á Moda do Porto</b></h1>
+        <p><b>Inventadas em: 1415</b></p>
+      </ion-label>
+    </ion-item>
+
+    <div class="centered-item">
+      <ion-icon name="caret-down-outline" class="icon"></ion-icon>
+    </div>
+
+    <ion-item button detail="false" lines="none">
+      <ion-label class="centered-label" [routerLink]="['/historia2']">
+        <h1><b>Caldo Verde</b></h1>
+        <p><b>Inventado em: 1604</b></p>
+      </ion-label>
+    </ion-item>
+
+    <div class="centered-item">
+      <ion-icon name="caret-down-outline" class="icon"></ion-icon>
+    </div>
+
+    <ion-item button detail="false" lines="none">
+      <ion-label class="centered-label" [routerLink]="['/historia24']">
+        <h1><b>Francesinha</b></h1>
+        <p><b>Inventada em: 1953</b></p>
+      </ion-label>
+    </ion-item>
+
+    <div class="centered-item">
+      <ion-icon name="caret-down-outline" class="icon"></ion-icon>
+    </div>
+
+    <div class="centered-item">
+      <div class="white-ball"></div>
+    </div>
+  </div>
+</ion-content>
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, auto);
+    gap: 10px;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .centered-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .white-ball {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .icon {
+    font-size: 4rem;
+  }
+
+  ion-item {
+    border-radius: 20px;
+    border: 2px solid white;
+    text-align: center;
+  }
+
+  .centered-label {
+    text-align: center;
+  }
+
+  .lista {
+    font-size: 16px;
+    margin-right: 5%;
+    margin-top: 5%;
+  }
+</style>
